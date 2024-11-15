@@ -73,11 +73,9 @@ header('location:index.php');
 //$ArticlesPreview = publishArticle($IdTblArticles, $Titre, $ImagePreview, $ImageUne, $Date, $Contenu, $IdUsersTblArticles, $Nom);
 
 $results = ArticlesManager::getAllArticles();
-$resultsUsers = UsersManager::getAllUsers();
 
 
 //var_dump($id);
-var_dump($resultsUsers);
 //$resultsAllarticle =  bla($idarticle);
 
 ?>
@@ -169,7 +167,7 @@ var_dump($resultsUsers);
                 
                 <?php foreach ($results as $result) {
                 $elemArticles = ArticlesManager::publishArticleById($result->getIdTblArticles());
-                $elemUsers = UsersManager::getAllUsers($resultsUsers->getNom());
+                $elemUsers = UsersManager::getUserById($elemArticles->getIdUsersTblArticles());
 
         //$getImagePreview = getAllArticles($result["IdTblArticles"]);
         //$getArticleByid = publishArticleById($result["IdTblArticles"]);

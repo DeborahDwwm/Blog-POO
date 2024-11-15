@@ -26,11 +26,13 @@ class UsersManager { // le manager est lui même une class mais il n'a pas besoi
         $stmt = $dbh->prepare($query);
         $stmt->bindParam(':email', $email);
         $stmt ->execute();
-        $result = $stmt->fetch(PDO::FETCH_CLASS, 'Users' ); // les fetch_assos du php natif se transforment en fetch_class + ajout du type d'objet à créer
-        return $result;
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Users');
+        $result = $stmt->fetch();
+        //$result = $stmt->fetch(PDO::FETCH_CLASS, 'Users'); // les fetch_assos du php natif se transforment en fetch_class + ajout du type d'objet à créer
+        //return $result;
     }
 
-    // fonction attraper nom de l'auteur ===========================================
+    // fonction attraper toutes données de auteur ===========================================
 
     public static function getAllUsers() {
         $dbh = dbconnect();
@@ -40,4 +42,18 @@ class UsersManager { // le manager est lui même une class mais il n'a pas besoi
         $results = $stmt->fetchAll(PDO::FETCH_CLASS, 'Users');
         return $results;
     }
+
+    // fonction attraper nom de l'auteur par l'id ===========================================
+
+    public static function getUserById($IdTbleUsers) {
+        $dbh = dbconnect();
+        $query = "SELECT * FROM `users` WHERE IdTblUsers = :IdTbleUsers";
+        $stmt = $dbh->prepare($query);
+        $stmt->bindParam(':IdTbleUsers', $IdTbleUsers);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Users');
+        $results = $stmt->fetch();
+        return $results;
+}
+
 }

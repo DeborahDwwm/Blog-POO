@@ -1,0 +1,620 @@
+
+body {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h2 {
+    margin-bottom: 5%;
+} 
+
+h3, h4 {
+    margin: 0;
+}
+
+/*------------------mise en page Header ----------------------------*/
+
+header, img {
+    max-width: 100%;
+}
+
+/*------------------mise en page Nav ----------------------------*/
+
+
+.navbar {
+   background-color: #f6f1ed;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.lienNav{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.liNav {
+    margin-top: 20px;
+}
+
+
+.icone {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.iconeCoeurVide{
+    margin: 0;
+}
+
+.ulNavClass {
+    text-align: center;
+
+}
+
+.divIcones {
+    display: flex;
+    justify-content: center;
+}
+
+.ulNav {
+        display: block;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+}
+
+.containerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    z-index: 1;
+    position: relative;
+    background-color: #f6f1ed;
+}
+
+.ulNavClass {
+-webkit-transition: max-height 0.8s linear;
+  -moz-transition: max-height 0.8s linear;
+  -ms-transition: max-height 0.8s linear;
+  -o-transition: max-height 0.8s linear;
+  transition: max-height 0.8s linear;
+  overflow: hidden;
+  max-height: 0;
+  width: 100%;
+    /* transform: translateY(-200%);
+    transition: transform 0.5s; */
+    /* transform: all 0.5 linear; */
+    z-index: 0;
+}
+
+.openNav {
+    /* transform: translate(0); */
+    max-height: 300px;
+
+}
+
+/*------------------mise en page main ----------------------------*/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.articles{
+width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 10%;
+padding-bottom: 10%;
+}
+
+.blocs {
+width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.about {
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photoAbout {
+    margin-bottom: 10%;
+}
+
+.pAbout {
+    text-align: justify;
+}
+
+.formConnexion {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.formConnexion2 {
+    margin-bottom: 0%;
+}
+
+.formMembers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.formArticle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+fieldset {
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.boutonSend {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputMembers{
+    width: 100%;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.boutonMembers {
+    width: 50%;
+    margin-top: 10%;
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.boutonMembers2 {
+    background-color: #f6f1ed;
+    width: 30%;
+}
+
+.iconeTexte {
+    width: 10px;
+    height: 10px;
+}
+
+.carteArticle {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.pCarteArticle {
+text-align: justify;
+
+}
+
+h2{
+margin-top: 0;
+}
+
+.formConnexion {
+    background-color: #f6f1ed;
+}
+
+.formArticle {
+    width: 100%;
+}
+
+.titreArticle {
+    width: 90%;
+}
+
+.auteurCoeur {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateCategorie {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
+.pBoutonMember {
+    font-size: 1em;
+    margin-bottom: 0;
+
+}
+
+/*------------------mise en page Carousel ----------------------------*/
+
+.carouselGeneral {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    
+}
+
+.containerCarousel {
+    width: 100%;
+}
+
+.slide-dot{ 
+    text-align: center; 
+    padding: 20px;}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover { 
+    background-color: black;
+    height: 10px;
+    width: 10px;
+ }
+
+
+
+/*------------------mise en page footer ----------------------------*/
+
+footer {
+    background-color: #f6f1ed;
+}
+
+.containerFooterGeneral {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+
+}
+
+.blocsFooterHaut {
+    display: flex;
+    flex-direction: column;
+
+}
+.articleFooterUn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.iconesReseaux {
+    display: flex;
+    justify-content: center;
+}
+
+.articleFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15%; 
+}
+.pFooter {
+    text-align: justify;
+    width: 100%;
+}
+
+.blocsFooterBas {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.lienBoutons {
+    text-decoration: none;
+    color: black;
+    padding: 5%;
+}
+.inputFooter {
+    padding: 2%;
+    width: 70%;
+}
+
+.boutonFooter {
+    width: 50%;
+    margin-top: 5%;
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+
+
+
+/*------------------média queries Tablette ----------------------------*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    
+/*------------------mise en page main ----------------------------*/
+.main {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articles{
+    width: 70%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    }
+    
+    .blocs {
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5%;
+    align-self: flex-start;
+    }
+
+    .h2Members {
+        font-size: 1em;
+    }
+
+    .formConnexion {
+        margin-bottom: 10%;
+    }
+
+    .formArticle {
+        width: 100%;
+    }
+
+    .titreArticle {
+        text-align: center;
+    }
+    /*------------------mise en page Footer ----------------------------*/
+
+    .containerFooterGeneral {
+        margin-top: 0;
+    }
+
+    .blocsFooterHaut {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articleFooterUn {
+        justify-content: flex-start;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .articleFooter {
+        justify-content: flex-start;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+}
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+/*------------------média queries Desktop ----------------------------*/
+
+
+/*------------------média queries Desktop ----------------------------*/
+
+@media screen and (min-width: 1025px) {
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    .iconeCoeurVide {
+        width: 20px;
+        height: 20px;
+    }
+  
+    /*------------------mise en page carousel ----------------------------*/
+    .carouselGeneral {
+        width: 70%;
+        
+    }
+
+    .dot {
+        height: 20px;
+        width: 20px;
+      }
+      
+      .active, .dot:hover { 
+          height: 20px;
+          width: 20px;
+       }
+
+    /*------------------mise en page main ----------------------------*/
+.main {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articles{
+    width: 70%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    }
+    
+    .blocs {
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5%;
+    align-self: flex-start;
+    }
+
+    .h2Members {
+        font-size: 1em;
+    }
+
+    .formConnexion {
+        margin-bottom: 10%;
+    }
+
+    .formArticle {
+        width: 100%;
+    }
+
+    .titreArticle {
+        text-align: center;
+    }
+
+    .auteurCoeur {
+        align-items: center;
+        margin-bottom: 2%;
+    }
+    /*------------------mise en page Footer ----------------------------*/
+
+    .containerFooterGeneral {
+        margin-top: 0;
+    }
+
+    .blocsFooterHaut {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articleFooterUn {
+        justify-content: flex-start;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .articleFooter {
+        justify-content: flex-start;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .blocsFooterHaut {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+
+    }
+   
+    /*------------------mise en page Nav ----------------------------*/
+
+    .containerTop {
+        display: none;
+    }
+    
+    nav{
+        position: relative;
+        min-height: auto;
+    }
+    
+    .ulNavClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateY(0);
+    max-height: 100%;
+    background-color: white;
+    
+    }
+
+    .ulNav {
+        display: flex;
+        width: 95%;
+        justify-content: flex-start;
+    }
+
+    .divLiensNav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 60%;
+        
+    }
+    
+    .divIcones {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .liNav {
+        padding: 10px;
+        margin-top: 0;
+    }
+
+}
